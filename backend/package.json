@@ -1,0 +1,49 @@
+{
+  "name": "evalbot-backend",
+  "version": "1.0.0",
+  "description": "API REST del sistema EvalBot con soporte de IA",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.102",
+    "@ai-sdk/groq": "^4.0.67",
+    "@google/genai": "^1.29.0",
+    "ai": "^7.0.148",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^7.0.3",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^10.1.2",
+    "pdfkit": "^0.20.2",
+    "pino": "^9.6.0",
+    "socket.io": "^4.8.4",
+    "xlsx": "^0.18.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.7",
+    "eslint": "^9.21.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.7"
+  }
+}
